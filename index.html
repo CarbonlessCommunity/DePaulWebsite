@@ -1,0 +1,64 @@
+<!doctype HTML>
+<head>
+    <style>
+        #title {
+            text-align: center;
+            font-size: 24px;
+            padding: 10px
+        }
+
+        div.imageContainer {
+            float: right;
+            position: absolute;
+            left: 1050px;
+        }
+
+        div.imageContainer > header {
+            font-size: 20pt;
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+        }
+
+        #img1 {
+            top: 150px;
+        }
+
+        #img2 {
+            top: 450px;
+        }
+
+        iframe {
+            /* box-shadow: 0 0 16px gray; */
+            margin: 10px;
+            width: 950px;
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <header id="title">
+        PV Solar at DePaul
+    </header>
+    <iframe id="iframeMain"
+            scrolling="no"
+            src="https://monitoringpublic.solaredge.com/solaredge-web/p/site/public?name=PV%20Solar%20at%20DePaul%20University&locale=en_US#/dashboard"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+    <div id="img1" class="imageContainer">
+        <header>
+            1150 West Fullerton
+        </header>
+        <img src="images/solar1.png"></img>
+    </div>
+    <div id="img2" class="imageContainer">
+        <header>
+            McGowan North
+        </header>
+        <img src="images/solar2.png"></img>
+    </div>
+</body>
+<script type="text/javascript" src="main.js"></script>
