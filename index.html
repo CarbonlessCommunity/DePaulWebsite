@@ -36,29 +36,45 @@
             width: 990px;
             height: 1070px;
         }
+		 #iframeMain {
+            -ms-zoom: 0.68;
+            -ms-transform-origin: 0 0;
+            -moz-transform: scale(0.68);
+            -moz-transform-origin: 0px 68px;
+            -o-transform: scale(0.68);
+            -o-transform-origin: 0px 68px;
+            -webkit-transform: scale(0.68);
+            -webkit-transform-origin: 0 0;
+        }
+        #flexbox {
+            display: flex;
+            justify-content: space-around;
+        }
     </style>
 </head>
 <body>
     <header id="title">
         PV Solar at DePaul
     </header>
-    <iframe id="iframeMain"
-            scrolling="no"
-            src="https://monitoringpublic.solaredge.com/solaredge-web/p/site/public?name=PV%20Solar%20at%20DePaul%20University&locale=en_US#/dashboard"
-            frameborder="0"
-            allowfullscreen>
-    </iframe>
-    <div id="img1" class="imageContainer">
-        <header>
-            1150 West Fullerton
-        </header>
-        <img src="images/solar1.png"></img>
-    </div>
-    <div id="img2" class="imageContainer">
-        <header>
-            McGowan North
-        </header>
-        <img src="images/solar2.png"></img>
+    <div id="flexbox">
+        <iframe id="iframeMain"
+                scrolling="no"
+                src="https://monitoringpublic.solaredge.com/solaredge-web/p/site/public?name=PV%20Solar%20at%20DePaul%20University&locale=en_US#/dashboard"
+                frameborder="0"
+                allowfullscreen>
+        </iframe>
+        <div id="img1" class="imageContainer">
+            <header>
+                1150 West Fullerton
+            </header>
+            <img src="images/solar1.png"></img>
+        </div>
+        <div id="img2" class="imageContainer">
+            <header>
+                McGowan North
+            </header>
+            <img src="images/solar2.png"></img>
+        </div>
     </div>
 </body>
 <script type="text/javascript" src="main.js"></script>
