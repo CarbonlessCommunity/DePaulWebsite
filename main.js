@@ -32,3 +32,9 @@ setInterval(() =>  {
     }
 
 }, 6000);
+
+FIFTEEN_MINUTES = 900000;
+
+setInterval(() => {
+	location.reload();
+}, FIFTEEN_MINUTES)
